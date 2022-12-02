@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Books List</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <h1>Books List</h1>
+  <body background="images/tree2.jpg">
+
+
+  
+
+  <div class="navbar"
+  <nav>
+    <a href="./">Homepage</a> 
+    <br>
+    <a href="./booksList">Books</a> 
+    <br>
+    
+    <a href="./contact">Contact Us</a>
+    <br>
+    <a href="./survey">Survey</a>
+    <br>
+    <a href="./honesty">Honesty</a>
+    <br>
+    </nav>
+  </div>
+
+  <% characters.forEach(function(character) { %>
+  <div class="books">
+  <nav>
+    <a
+            href="./books/?id=<%= character._id %>"
+            style="
+              text-decoration: none;
+              color: black;
+              text-align: center;
+              justify-content: center;
+              align-items: center;
+            "
+            ><img src="images/<%= character.image %>" width="200" height="250"></a>
+    <br>
+  </nav>
+</div>
+
+<div class="law"
+<nav>
+    <a  href="./books/?id=<%= character._id %>"<label><b><%= character.name %> -  <%= character.author_name %></b></label>
+</nav></a>
+</div>
+  
+<%  }); %>
+</html>
